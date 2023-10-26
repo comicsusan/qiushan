@@ -20,8 +20,8 @@ let cloudInfos=[];
 
 
 //用户坐标
-var clat=0 ;
-var clon=0 ;
+var clat=30.17 ;
+var clon=120.09 ;
 var zom =14;
 
 
@@ -35,11 +35,7 @@ var valleyPois;
 
 
 function preload() {
-  navigator.geolocation.getCurrentPosition((position) => {
-    clat = position.coords.latitude;
-    clon = position.coords.longitude;
-  }
-  );
+ 
  
 
   //获取中心坐标设定范围内景物坐标
