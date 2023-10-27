@@ -20,8 +20,8 @@ let cloudInfos=[];
 
 
 //用户坐标
-var clat=30.17 ;
-var clon=120.09;
+var clat=0 ;
+var clon=0;
 var zom =14;
 
 
