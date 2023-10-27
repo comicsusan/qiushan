@@ -35,6 +35,9 @@ var valleyPois;
 
 
 function preload() {
+  if (!navigator.geolocation) {
+    alert("navigator.geolocation is not available");
+  }
   navigator.geolocation.getCurrentPosition((position) => {
     clat = position.coords.latitude;
     clon = position.coords.longitude;
