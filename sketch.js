@@ -35,9 +35,12 @@ var valleyPois;
 
 
 function preload() {
+  navigator.geolocation.getCurrentPosition((position) => {
+    clat = position.coords.latitude;
+    clon = position.coords.longitude;
+  }
+  );
  
- 
-
   //获取中心坐标设定范围内景物坐标
  loadJSON('https://restapi.amap.com/v3/geocode/regeo?location='+
     clon+
